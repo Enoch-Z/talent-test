@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="40道生活小选择，发现你的行为倾向、潜在优势和值得尝试的天赋赛道。凭直觉选择，给自己一个新的探索方向。">
+  <title>测一测｜你的天赋适合什么赛道</title>
+  <style>
+    :root{--paper:#f6f5ef;--ink:#283d36;--muted:#727b70;--line:#dde1d6;--orange:#de6848;--orange-dark:#ba4c31;--mint:#e7eddb;--cream:#f3dfaa;--white:#fffefa;--serif:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;--sans:"PingFang SC","Microsoft YaHei UI","Microsoft YaHei",system-ui,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}button,a,input{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:disabled{cursor:not-allowed}button:focus-visible,a:focus-visible,summary:focus-visible,textarea:focus-visible{outline:3px solid var(--orange);outline-offset:5px}::selection{background:#efd49d;color:var(--ink)}[hidden]{display:none!important}.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}svg{display:block}button{color:inherit}h1,h2,h3,p{margin-top:0}button svg{pointer-events:none}.app{min-height:100svh;display:flex;flex-direction:column}.site-header{width:min(1160px,calc(100% - 80px));margin:0 auto;height:100px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;letter-spacing:.1em;font-size:18px;font-weight:750}.brand-icon{width:33px;height:33px}.header-note{font-size:12px;letter-spacing:.12em;color:var(--muted);display:flex;gap:9px;align-items:center}.tiny-star{color:var(--orange);font-size:20px}.main{width:min(1160px,calc(100% - 80px));margin:0 auto;flex:1}.hero{display:grid;grid-template-columns:1.02fr 1fr;gap:28px;align-items:center;padding:66px 0 46px}.eyebrow{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.17em;font-weight:650;color:#677a67;margin-bottom:24px}.eyebrow:before{content:"";width:24px;height:1px;background:currentColor}.hero h1{font:500 clamp(40px,4.65vw,66px)/1.35 var(--serif);letter-spacing:.01em;margin-bottom:20px}.hero h1 .quiz-intro{display:block;font:500 13px/1.4 var(--sans);letter-spacing:.18em;margin-bottom:14px}.highlight{position:relative;color:var(--orange);white-space:nowrap}.highlight:after{content:"";position:absolute;left:0;right:3px;height:7px;border-top:2px solid var(--orange);border-radius:50%;bottom:-7px;transform:rotate(-3deg)}.hero-lead{max-width:430px;font-size:16px;line-height:2;color:#657067;margin-bottom:26px}.button-primary,.button-secondary{border:0;border-radius:8px;min-height:52px;padding:13px 26px;display:inline-flex;align-items:center;justify-content:center;gap:27px;font-weight:650;transition:transform .18s,background .18s,box-shadow .18s}.button-primary{background:var(--orange);color:#fffdf8;box-shadow:0 5px 0 #c9593d18}.button-primary:hover:not(:disabled){background:var(--orange-dark);transform:translateY(-2px);box-shadow:0 7px 16px #c9593d20}.button-primary:active:not(:disabled){transform:translateY(1px)}.button-primary:disabled{background:#d5d9cd;color:#6d786f;box-shadow:none}.arrow{width:22px;height:16px}.home-cta{min-width:210px;font-size:16px}.hero-meta{font-size:11px;letter-spacing:.04em;color:var(--muted);margin:15px 0 0}.hero-meta span+span:before{content:"·";margin:0 9px;color:#a3aa9c}.bloom-board{position:relative;min-height:454px;isolation:isolate}.bloom-board:before{content:"";position:absolute;inset:23px 10px 20px 35px;background:#edf0e3;border-radius:49% 47% 44% 45%;transform:rotate(9deg);z-index:-1}.bloom{position:absolute;inset:0;width:100%;height:100%;overflow:visible}.floating-label{position:absolute;background:var(--white);padding:9px 16px;box-shadow:0 5px 15px #283d3607;border:1px solid #e0e4d6;border-radius:5px;font-size:12px;white-space:nowrap;z-index:1}.label-one{left:4%;top:14%;transform:rotate(-9deg)}.label-two{right:0;top:31%;transform:rotate(7deg);background:#e6dfef}.label-three{left:1%;bottom:22%;transform:rotate(4deg);background:#f5e5c6}.board-note{position:absolute;bottom:8%;left:33%;font-size:11px;letter-spacing:.12em;color:#788271}.board-caption{position:absolute;top:0;right:20%;font-size:10px;letter-spacing:.2em;color:#7d8876}.hero-small-star{position:absolute;right:8%;bottom:14%;font-size:34px;color:#ce7955;transform:rotate(16deg)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;padding:28px 0 34px;border-top:1px solid var(--line)}.step{display:flex;gap:18px;align-items:flex-start}.step-number{font:italic 27px/1.5 Georgia,serif;color:#a5b09a}.step h2{font-size:14px;margin:3px 0 4px;font-weight:650}.step p{font-size:12px;color:var(--muted);margin:0}.site-footer{width:min(1160px,calc(100% - 80px));margin:0 auto;padding:21px 0 24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;color:#81877c;font-size:10px;letter-spacing:.02em}.footer-en{letter-spacing:.15em;font-size:9px;white-space:nowrap}.view-enter{animation:enter .32s ease both}@keyframes enter{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+    .quiz-wrap{max-width:760px;margin:40px auto 44px}.quiz-topline{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:13px;font-size:12px}.text-button{background:none;border:0;padding:4px 0;color:#6e7b6c;display:inline-flex;gap:7px;align-items:center;font-size:12px}.text-button:hover{color:var(--orange)}.progress-text{color:#60705e}.progress-text strong{font-size:15px;color:var(--ink);font-weight:650}.progress-track{height:5px;background:#e1e5d9;border-radius:6px;overflow:hidden}.progress-fill{height:100%;width:0;background:var(--orange);transition:width .35s ease;border-radius:6px}.question-card{margin-top:25px;background:var(--white);border:1px solid #e0e3d8;border-radius:14px;padding:30px 38px 28px;box-shadow:0 8px 30px #2d3d3403}.question-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.scene-pill{display:inline-flex;align-items:center;gap:7px;background:#eef1e5;border-radius:50px;padding:4px 11px;font-size:10px;letter-spacing:.07em;color:#637356}.question-index{font:italic 23px Georgia,serif;color:#a2ad98}.question-index small{font:normal 11px var(--sans);color:#9ba491}.question-card h2{font:600 clamp(21px,2.5vw,27px)/1.65 var(--serif);margin:0 0 5px;min-height:44px}.question-tip{font-size:11px;color:#8b9385;margin-bottom:22px}.options{display:grid;gap:11px;border:0;margin:0;padding:0;min-width:0}.option{display:flex;align-items:center;gap:14px;position:relative;padding:14px 17px;border:1px solid #e2e5da;border-radius:8px;background:#fffefa;cursor:pointer;transition:background .18s,border-color .18s,transform .18s,box-shadow .18s;line-height:1.65;min-height:57px}.option:hover{border-color:#a1b38f;background:#f7f9f1;transform:translateX(2px)}.option:focus-within{outline:3px solid #d8b17a;outline-offset:3px}.option:has(input:checked){background:#edf2e3;border-color:#718c57;box-shadow:0 0 0 1px #718c5720}.option input{position:absolute;opacity:0;width:1px;height:1px;margin:0}.option-letter{flex:none;display:grid;place-items:center;border:1px solid #dfe3d7;border-radius:50%;width:27px;height:27px;color:#8a9482;background:#fbfcf8;font:12px Georgia,serif;transition:background .18s,color .18s}.option:has(input:checked) .option-letter{background:#6c8754;color:white;border-color:#6c8754}.option-label{flex:1;font-size:13px}.option-check{width:17px;height:17px;flex:none;opacity:0;color:#68834f;transition:opacity .18s,transform .18s;transform:scale(.5)}.option:has(input:checked) .option-check{opacity:1;transform:scale(1)}.quiz-navigation{display:flex;align-items:center;justify-content:space-between;margin-top:24px;gap:15px}.button-secondary{background:transparent;border:1px solid #d7ddcf;gap:10px;min-height:45px;padding:10px 20px;font-size:12px}.button-secondary:hover:not(:disabled){background:#edf0e4}.button-secondary:disabled{opacity:.4}.quiz-navigation .button-primary{min-height:45px;padding:10px 23px;font-size:12px;gap:16px}.quiz-note{text-align:center;margin:17px 0 0;color:#919889;font-size:10px;letter-spacing:.03em}.question-dots{display:flex;justify-content:center;align-items:center;gap:5px;margin-top:20px}.chapter-dot{width:28px;height:3px;border-radius:4px;background:#e1e5d9}.chapter-dot.done{background:#a5b590}.chapter-dot.current{background:var(--orange)}
+    .result-wrap{max-width:840px;margin:36px auto 43px}.result-topline{text-align:center;font-size:10px;letter-spacing:.2em;color:#818b79;margin-bottom:17px}.result-sheet{border:1px solid #dce1d4;border-radius:14px;overflow:hidden;background:var(--white);box-shadow:0 14px 40px #293c3505;--accent:#d66c4c}.result-banner{position:relative;background:#ecf0e3;padding:24px 34px 21px;text-align:center;overflow:hidden}.result-banner:before,.result-banner:after{content:"✳";position:absolute;font:110px/1 Georgia,serif;color:var(--accent);opacity:.1;top:24px;left:10px;transform:rotate(-12deg)}.result-banner:after{left:auto;right:5px;top:72px;font-size:80px;transform:rotate(20deg)}.section-number{font:italic 14px Georgia,serif;color:#91a17e;margin-right:7px}.result-kicker{font-size:10px;letter-spacing:.08em;color:#758166;margin-bottom:7px}.result-name{font:600 clamp(26px,4vw,37px)/1.4 var(--serif);margin:0 0 9px;color:var(--ink);position:relative}.result-tags{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin-bottom:13px}.result-tag{padding:2px 9px;border:1px solid #ced7c2;border-radius:30px;font-size:9px;color:#6d7e59;background:#f7f9ef}.result-slogan{font:500 clamp(17px,2.7vw,23px)/1.6 var(--serif);color:var(--accent);margin:0 0 6px;position:relative}.result-intro{font-size:11px;color:#7b8572;margin:0}.result-body{display:grid;grid-template-columns:1.12fr 1fr;gap:0;padding:23px 30px}.result-section h3{font-size:13px;margin:0 0 10px;font-weight:650}.result-section p{font-size:11px;line-height:1.95;margin:0 0 10px;color:#64705e}.result-why{padding-right:25px;border-right:1px dashed #dde3d5}.result-extra{padding-left:25px}.evidence{padding:9px 12px;border-radius:7px;background:#f6f7f0;margin-top:10px}.evidence .evidence-label{font-size:9px;letter-spacing:.05em;color:#8b967e;margin-bottom:5px}.evidence p{font-size:10px;line-height:1.8;color:#6e7c62;margin:0}.evidence p+p{margin-top:5px}.experiment{margin-top:12px;padding:9px 12px;background:#fbf3e3;border-radius:7px}.experiment .experiment-label{display:block;font-size:9px;color:#a18556;margin-bottom:3px}.experiment p{font-size:10px;color:#827354;margin:0}.directions-line{border-top:1px solid #e8ebdf;margin:0 30px;padding:13px 0;display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;font-size:10px;color:#79856e}.direction{background:#f1f4e9;padding:2px 8px;border-radius:4px;color:#6e7e5e}.result-sheet-foot{border-top:1px dashed #e0e5d6;padding:11px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:9px;color:#9ba38f}.mini-brand{letter-spacing:.12em;color:#78886d}.result-actions{display:flex;justify-content:center;gap:12px;margin:20px auto 10px}.result-actions .button-primary{min-height:44px;padding:10px 22px;font-size:12px;gap:10px}.result-actions .button-secondary{min-height:44px}.result-caption{text-align:center;color:#8d9685;font-size:10px;margin:10px 0 0}.details{margin-top:20px;border-top:1px solid var(--line);padding-top:12px}.details summary{cursor:pointer;font-size:11px;color:#78846d;list-style:none;text-align:center}.details summary::-webkit-details-marker{display:none}.details summary:after{content:" ＋"}.details[open] summary:after{content:" −"}.details-inner{padding:17px 5px 0;display:grid;grid-template-columns:1fr 1fr;gap:25px}.details p{font-size:11px;color:#7c8870;line-height:1.9}.dimension-bars{display:grid;gap:8px}.dimension-row{display:flex;gap:9px;align-items:center;font-size:10px;color:#6f7c64}.dimension-label{width:50px;flex:none}.dimension-track{height:5px;background:#e5e9dc;border-radius:5px;flex:1;overflow:hidden}.dimension-fill{height:100%;background:#98ac80;border-radius:5px}.dimension-value{width:25px;text-align:right;font-size:9px;color:#93a084}.result-close-note{font-size:10px;color:#8b9581;text-align:center;line-height:1.9;margin:12px auto 0;max-width:690px}.toast{position:fixed;bottom:28px;left:50%;transform:translate(-50%,15px);background:#2b4038;color:#fffdf6;padding:11px 19px;border-radius:8px;font-size:12px;z-index:20;opacity:0;transition:opacity .2s,transform .2s;pointer-events:none;max-width:calc(100% - 32px);text-align:center}.toast.visible{opacity:1;transform:translate(-50%,0)}dialog{border:1px solid var(--line);border-radius:13px;width:min(400px,calc(100% - 36px));background:var(--white);color:var(--ink);padding:26px;box-shadow:0 20px 90px #1d302827}dialog::backdrop{background:#1d30284d;backdrop-filter:blur(3px)}dialog h2{font:600 23px var(--serif);margin-bottom:12px}dialog p{font-size:12px;color:var(--muted);margin-bottom:20px}.dialog-actions{display:flex;gap:10px;justify-content:flex-end}.dialog-actions button{min-height:42px;font-size:12px;padding:9px 18px}.copy-text{width:100%;min-height:130px;border:1px solid var(--line);background:#f5f7ef;color:var(--ink);border-radius:6px;padding:12px;font:13px/1.8 var(--sans);resize:vertical;margin-bottom:16px}
+    @media(min-width:1440px){.hero{padding-top:80px;padding-bottom:65px}.hero h1{font-size:68px}.bloom-board{min-height:480px}}@media(max-width:900px){.site-header,.main,.site-footer{width:calc(100% - 48px)}.hero{gap:8px;padding:48px 0 36px}.hero h1{font-size:46px}.hero-lead{font-size:14px}.bloom-board{min-height:390px}.floating-label{font-size:10px;padding:7px 10px}.label-two{right:-5px}.board-note{font-size:9px;left:28%}.steps{gap:15px}.step{gap:10px}.step p{font-size:11px}.step h2{font-size:13px}.step-number{font-size:23px}}
+    @media(max-width:620px){.site-header,.main,.site-footer{width:calc(100% - 36px)}.site-header{height:73px}.brand{font-size:16px;gap:8px}.brand-icon{width:27px;height:27px}.header-note{font-size:9px;letter-spacing:.04em;gap:5px}.tiny-star{font-size:16px}.hero{display:flex;flex-direction:column;gap:10px;padding:30px 0 24px}.hero-copy{width:100%}.eyebrow{font-size:9px;letter-spacing:.12em;margin-bottom:18px}.eyebrow:before{width:17px}.hero h1{font-size:clamp(38px,10vw,52px);line-height:1.38;margin-bottom:17px}.hero h1 .quiz-intro{font-size:10px;margin-bottom:9px}.hero-lead{font-size:12px;line-height:2;max-width:340px;margin-bottom:20px}.home-cta{font-size:14px;min-height:48px;width:100%;justify-content:space-between;padding:12px 22px}.hero-meta{text-align:center;font-size:9px;margin-top:12px}.hero-meta span+span:before{margin:0 7px}.bloom-board{width:100%;min-height:310px;max-width:390px;margin-top:17px}.bloom-board:before{inset:15px 14px 10px 23px}.label-one{top:11%;left:3%}.label-two{right:0;top:27%}.label-three{bottom:20%;left:0}.floating-label{font-size:9px;padding:7px 10px}.board-note{left:32%;bottom:6%;font-size:8px}.board-caption{top:0;font-size:8px;right:22%}.hero-small-star{font-size:26px}.steps{gap:15px;padding:22px 0 24px}.step{display:block}.step-number{font-size:20px;line-height:1}.step h2{font-size:11px;white-space:nowrap;margin:9px 0 5px}.step p{font-size:9px;line-height:1.9}.site-footer{display:block;padding:17px 0 21px;font-size:9px;text-align:center}.footer-en{display:none}.quiz-wrap{margin:24px auto 30px}.quiz-topline{font-size:10px}.progress-text strong{font-size:13px}.text-button{font-size:10px}.question-card{margin-top:20px;padding:24px 18px 23px;border-radius:12px}.question-heading{margin-bottom:15px}.question-card h2{font-size:22px;line-height:1.6;min-height:70px}.question-index{font-size:22px}.scene-pill{font-size:9px}.question-tip{font-size:9px;margin-top:6px;margin-bottom:20px}.option{padding:13px 12px;gap:10px;min-height:65px}.option-letter{width:25px;height:25px;font-size:11px}.option-label{font-size:12px}.option-check{width:15px;height:15px}.options{gap:12px}.quiz-navigation{margin-top:23px}.quiz-navigation .button-primary{font-size:12px;min-width:133px}.button-secondary{padding:10px 14px;font-size:11px}.quiz-note{font-size:9px;line-height:1.8;margin-top:16px}.question-dots{margin-top:18px}.chapter-dot{width:25px}.result-wrap{margin:25px auto 31px}.result-topline{font-size:8px;margin-bottom:13px}.result-banner{padding:21px 16px 18px}.result-name{font-size:27px}.result-slogan{font-size:17px;line-height:1.65}.result-tag{font-size:8px}.result-tags{gap:6px;margin-bottom:12px}.result-kicker{font-size:9px}.result-intro{font-size:10px}.result-body{display:block;padding:19px 21px 14px}.result-why{padding-right:0;border-right:0;padding-bottom:16px;border-bottom:1px dashed #e0e5d6}.result-extra{padding-left:0;padding-top:16px}.result-section h3{font-size:12px;margin-bottom:8px}.result-section p{font-size:11px;line-height:1.9;margin-bottom:8px}.evidence{padding:8px 10px;margin-top:9px}.evidence p{font-size:10px;margin:0}.evidence p+p{margin-top:5px}.experiment{margin-top:9px;padding:8px 10px}.experiment p{font-size:10px;margin:0}.directions-line{margin:0 21px;padding:12px 0;gap:6px;font-size:9px}.direction{font-size:9px;padding:2px 6px}.result-sheet-foot{padding:10px 14px;font-size:8px}.mini-brand{font-size:8px}.result-actions{gap:10px;margin-top:18px}.result-actions .button-primary{padding:11px 15px;font-size:11px;gap:8px;flex:1}.result-actions .button-secondary{font-size:11px;padding:11px 15px;flex:1}.result-caption{font-size:9px}.details-inner{grid-template-columns:1fr;gap:4px}.details p{font-size:10px}.result-close-note{font-size:9px}.result-banner:before{font-size:90px;left:-25px}.result-banner:after{font-size:70px;right:-17px}.toast{font-size:11px}}
+    .steps{grid-template-columns:repeat(3,minmax(0,1fr))}.step{min-width:0}.button-primary{background:var(--orange-dark)}.result-section p{font-size:12px}.result-tag{font-size:10px}.evidence p,.experiment p{font-size:11px}.result-intro{font-size:12px}.result-section h3{font-size:14px}#question-title:focus,#result-name:focus{outline:none}
+    @media(max-width:620px){.result-section p{font-size:12px}.result-tag{font-size:10px}.evidence p,.experiment p{font-size:11px}.result-intro{font-size:11px}.result-section h3{font-size:13px}.result-body{padding-left:19px;padding-right:19px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}@media print{body{background:white}.site-header,.site-footer,.result-actions,.result-caption,.details,.result-close-note,.result-topline,.toast{display:none!important}.main{width:100%}.result-wrap{max-width:780px;margin:0 auto}.result-sheet{box-shadow:none;break-inside:avoid}body:has(#quiz:not([hidden])) .quiz-wrap{margin:0 auto}.result-banner,.evidence,.experiment,.direction{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <header class="site-header">
+    <div class="brand"><svg class="brand-icon" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="#708358" stroke-width="4.5" stroke-linecap="round"><path d="M20 5v30M5 20h30M9.4 9.4l21.2 21.2M9.4 30.6L30.6 9.4"/></g><circle cx="20" cy="20" r="5" fill="#de6848"/></svg><span>天赋漫游</span></div>
+    <div class="header-note"><span class="tiny-star" aria-hidden="true">✦</span><span>每一种天赋，都有自己的主场</span></div>
+  </header>
+  <main class="main" id="main">
+    <section id="home" class="view-enter" aria-labelledby="home-title">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">A LITTLE QUIZ. A NEW POSSIBILITY.</div>
+          <h1 id="home-title" aria-label="测一测｜你的天赋适合什么赛道"><span class="quiz-intro">测一测 · 发现自己的另一面</span>你的天赋<br>适合什么<span class="highlight">赛道</span>？</h1>
+          <p class="hero-lead">那些「我一直都这样呀」的小习惯，<br>也许正藏着你还没发现的闪光点。<br>跟着 40 个日常小场景，看看天赋往哪儿生长。</p>
+          <button type="button" id="start" class="button-primary home-cta">开始测试<svg class="arrow" viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 8h21M15 1l7 7-7 7"/></svg></button>
+          <p class="hero-meta"><span>40 道单选</span><span>约 6–8 分钟</span><span>凭直觉，无需专业知识</span></p>
+        </div>
+        <div class="bloom-board" aria-hidden="true">
+          <div class="board-caption">LET YOUR TALENT BLOOM</div>
+          <svg class="bloom" viewBox="0 0 500 460" fill="none">
+            <ellipse cx="250" cy="225" rx="191" ry="148" stroke="#c5cfb5" stroke-dasharray="3 7" transform="rotate(-26 250 225)"/>
+            <path d="M250 310c-5 37-10 59 9 90M258 365c25-28 53-23 66-37-2 25-27 40-64 42M250 349c-25-6-46-22-50-40 29 0 46 16 50 40" stroke="#7e9267" stroke-width="2" stroke-linecap="round"/>
+            <g transform="translate(250 222)">
+              <ellipse cy="-63" rx="40" ry="80" fill="#ddbc83" transform="rotate(0)"/>
+              <ellipse cy="-63" rx="40" ry="80" fill="#e8b4a5" transform="rotate(45)"/>
+              <ellipse cy="-63" rx="40" ry="80" fill="#b3bea0" transform="rotate(90)"/>
+              <ellipse cy="-63" rx="40" ry="80" fill="#c5bed4" transform="rotate(135)"/>
+              <ellipse cy="-63" rx="40" ry="80" fill="#ddbc83" transform="rotate(180)"/>
+              <ellipse cy="-63" rx="40" ry="80" fill="#e8b4a5" transform="rotate(225)"/>
+              <ellipse cy="-63" rx="40" ry="80" fill="#b3bea0" transform="rotate(270)"/>
+              <ellipse cy="-63" rx="40" ry="80" fill="#c5bed4" transform="rotate(315)"/>
+              <circle r="67" fill="#f6edcd" stroke="#fff9e6" stroke-width="2"/>
+              <ellipse cx="-21" cy="-7" rx="3" ry="5" fill="#5d6950"/><ellipse cx="21" cy="-7" rx="3" ry="5" fill="#5d6950"/>
+              <path d="M-17 13c10 13 24 13 34 0" stroke="#5d6950" stroke-width="2.7" stroke-linecap="round"/>
+              <ellipse cx="-36" cy="9" rx="8" ry="4" fill="#e6b7a2" opacity=".7"/><ellipse cx="36" cy="9" rx="8" ry="4" fill="#e6b7a2" opacity=".7"/>
+            </g>
+            <path d="M389 67v24M377 79h24M102 340v17M94 348h17" stroke="#a8b58f" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="89" cy="191" r="4" fill="#dbb27d"/><circle cx="400" cy="299" r="3" fill="#b6b2c7"/>
+            <path d="M131 79c10-7 21-6 26 2" stroke="#cc9d6a" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div class="floating-label label-one">✧ 把脑洞变成作品</div>
+          <div class="floating-label label-two">↗ 让复杂变得清楚</div>
+          <div class="floating-label label-three">♡ 接住别人的小情绪</div>
+          <div class="board-note">你的可能性，不止一种。</div><div class="hero-small-star">✳</div>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-number">01</span><div><h2>凭直觉，选自己</h2><p>没有标准答案，选最像你的那个。</p></div></div>
+        <div class="step"><span class="step-number">02</span><div><h2>小习惯，大线索</h2><p>从小选择，看见你的行为倾向。</p></div></div>
+        <div class="step"><span class="step-number">03</span><div><h2>让天赋，去散步</h2><p>发现赛道，再去生活里试一试。</p></div></div>
+      </div>
+    </section>
+    <section id="quiz" hidden aria-label="天赋探索答题">
+      <div class="quiz-wrap">
+        <div class="quiz-topline"><button id="back-home" class="text-button" type="button">← 返回首页</button><span class="progress-text" id="progress-text" aria-live="polite">已完成 <strong>0</strong> / 40</span></div>
+        <div class="progress-track" id="progress" role="progressbar" aria-label="答题进度" aria-valuemin="0" aria-valuemax="40" aria-valuenow="0"><div id="progress-fill" class="progress-fill"></div></div>
+        <div class="question-card" id="question-card">
+          <div class="question-heading"><span id="scene" class="scene-pill"></span><span class="question-index"><span id="question-number">01</span><small> / 40</small></span></div>
+          <h2 id="question-title" tabindex="-1"></h2><p class="question-tip" id="question-tip">如果都像你，选第一直觉最靠近的那个。</p>
+          <fieldset class="options" id="options" aria-labelledby="question-title" aria-describedby="question-tip"></fieldset>
+          <div class="quiz-navigation"><button id="previous" class="button-secondary" type="button">← 上一题</button><button id="next" class="button-primary" type="button" disabled><span id="next-label">下一题</span><span aria-hidden="true">→</span></button></div>
+        </div>
+        <div class="question-dots" aria-hidden="true" id="chapter-dots"></div>
+        <p id="quiz-note" class="quiz-note">不必寻找完美答案。你平常的样子，就很好。</p>
+      </div>
+    </section>
+    <section id="result" hidden aria-label="你的天赋探索结果">
+      <div class="result-wrap">
+        <p class="result-topline">40 个小选择，拼出一份关于你的新发现</p>
+        <article class="result-sheet" id="result-sheet" aria-labelledby="result-name">
+          <div class="result-banner"><p class="result-kicker"><span class="section-number">01</span>你的天赋赛道 · <span id="result-nickname"></span></p><h2 id="result-name" class="result-name" tabindex="-1"></h2><div id="result-tags" class="result-tags"></div><p id="result-slogan" class="result-slogan"></p><p id="result-intro" class="result-intro"></p></div>
+          <div class="result-body">
+            <section class="result-section result-why"><h3><span class="section-number">02</span>为什么是你</h3><p id="result-why"></p><div class="evidence"><p class="evidence-label">在你的选择里，我们看到</p><div id="result-evidence"></div></div></section>
+            <section class="result-section result-extra"><h3><span class="section-number">03</span>你的隐藏特质 & 小彩蛋</h3><p id="result-hidden"></p><div class="experiment"><span class="experiment-label">↗ 给天赋一个小小的试验场</span><p id="result-step"></p></div></section>
+          </div>
+          <div id="directions" class="directions-line"><span>可以试试</span></div><div class="result-sheet-foot"><span class="mini-brand">✳ 天赋漫游 · TALENT IN BLOOM</span><span>这是探索的起点，可能性由你续写。</span></div>
+        </article>
+        <div class="result-actions"><button id="copy-result" class="button-primary" type="button"><span aria-hidden="true">⧉</span>复制我的分享文案</button><button id="restart" class="button-secondary" type="button"><span aria-hidden="true">↻</span>重新测试</button></div>
+        <p class="result-caption">截下这张天赋小卡，问问朋友：「你测出来适合什么赛道？」</p>
+        <details class="details"><summary>这份结果是怎么来的？</summary><div class="details-inner"><div><p>每个选择会为两个行为维度积累不同权重的分数。完成 40 题后，按各维度的可得分上限做归一化，再综合三个维度匹配赛道。结果中的小线索，来自你实际选择过的选项。</p><p id="blend-note"></p><p>这里展示的是这次选择中的倾向强度，不代表能力高低、百分位或成功概率。</p></div><div id="dimension-bars" class="dimension-bars"></div></div></details>
+        <p class="result-close-note">这是一份趣味自我探索参考，并非专业职业测评。你可以拥有多种天赋，<br class="desktop-break">也可以随着兴趣和经历改变方向。把喜欢的方向放进真实生活里试试吧。</p>
+      </div>
+    </section>
+    <noscript><p style="padding:24px">请在浏览器中启用 JavaScript 后开始测试。页面无需联网，答案仅保存在本页运行内存中。</p></noscript>
+  </main>
+  <footer class="site-footer"><span>趣味探索参考 · 你的选择仅用于本页计算，不会上传 · 关闭或刷新后清空</span><span class="footer-en">GROW IN YOUR OWN WAY.</span></footer>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="restart-dialog" aria-labelledby="restart-title"><h2 id="restart-title">再认识一次自己？</h2><p>重新测试会清空本轮答案和结果。也许换一种心情，又会发现新的自己。</p><div class="dialog-actions"><button id="cancel-restart" class="button-secondary" type="button" autofocus>保留这次结果</button><button id="confirm-restart" class="button-primary" type="button">重新开始</button></div></dialog>
+<dialog id="copy-dialog" aria-labelledby="copy-title"><h2 id="copy-title">把这句天赋宣言带走</h2><p>你的浏览器暂未允许自动复制。长按或选中下方文案，即可手动复制。</p><textarea id="copy-text" class="copy-text" readonly aria-label="可复制的天赋分享文案"></textarea><div class="dialog-actions"><button id="close-copy" class="button-secondary" type="button">完成</button></div></dialog>
+<script id="quiz-data" type="application/json">{"questions":[{"scene":"外卖盲盒","question":"一家没吃过的小店出现在外卖首页，你最先点开看什么？","options":[{"text":"几条真实评价，看看口味有没有规律","primary":"analysis","insight":"面对新选择，你会先从零散信息里找一点规律","secondary":"technical"},{"text":"菜品照片，找一道搭配很特别的","primary":"creative","insight":"意料之外的组合，常常比熟悉的答案更能吸引你","secondary":"strategy"},{"text":"店家的介绍，想看看这家店有什么故事","primary":"expression","insight":"比起干巴巴的信息，你容易被有细节的故事吸引","secondary":"creative"},{"text":"制作过程，想知道这口感是怎么做出来的","primary":"technical","insight":"遇到新鲜东西，你常会好奇它是怎么运转的","secondary":"connect"}]},{"scene":"周末留白","question":"醒来发现今天没有任何安排，你更想怎样开启这一天？","options":[{"text":"慢慢吃顿早餐，先照顾好今天的状态","primary":"care","insight":"没有外部催促时，你愿意先留意自己真正需要什么","secondary":"expression"},{"text":"看看天气和活动，挑个今天最值得去的","primary":"strategy","insight":"选择很多时，你会寻找当下最值得投入的一件事","secondary":"organize"},{"text":"问问朋友在干嘛，看能不能碰个面","primary":"connect","insight":"空白的一天里，和人产生连接会让你更有兴致","secondary":"care"},{"text":"写下两三件小事，做完后安心躺平","primary":"organize","insight":"把一天整理成几个小步骤，会让你更自在地享受空闲","secondary":"analysis"}]},{"scene":"群聊出游","question":"朋友群终于决定周末出门，但聊天已经盖了几百层楼。你会先？","options":[{"text":"把时间、地点和待定事项整理成一条消息","primary":"organize","insight":"热闹的信息堆里，你会自然地把待办事项理出顺序","secondary":"analysis"},{"text":"用几句话描绘一下，去了之后能有多好玩","primary":"expression","insight":"你会用具体的画面，让大家更容易对一件事产生期待","secondary":"creative"},{"text":"挑出两套最可行的方案，让大家更好选","primary":"strategy","insight":"面对一堆选择，你倾向于先缩小范围，再推动决定","secondary":"organize"},{"text":"找还没说话的人聊聊，看看大家想法差在哪","primary":"connect","insight":"你常会留意没被说出的意见，让大家更容易聊到一起","secondary":"care"}]},{"scene":"雨天改道","question":"期待很久的户外活动遇上大雨，你的第一反应更像哪一个？","options":[{"text":"打开地图试试筛选，找附近能躲雨的新去处","primary":"technical","insight":"计划遇到变化时，你愿意动手试工具，寻找新的出口","secondary":"connect"},{"text":"先问问同行的人冷不冷、累不累","primary":"care","insight":"事情突然变化时，你会先留意身边人的真实感受","secondary":"expression"},{"text":"不如把今天改成雨天限定小冒险","primary":"creative","insight":"原来的计划走不通时，你也能给这一天换个有趣的剧本","secondary":"strategy"},{"text":"看看雨会下多久，再决定等一等还是换地方","primary":"analysis","insight":"突发情况里，你习惯补齐信息，再判断下一步","secondary":"technical"}]},{"scene":"新店开门","question":"常走的小路上新开了一家看不懂卖什么的店，你可能会？","options":[{"text":"和店员聊两句，听听这家店的来头","primary":"connect","insight":"遇到陌生环境时，和人聊一聊是你打开它的一种方式","secondary":"care"},{"text":"看看里面奇怪的小装置，想试试怎么用","primary":"technical","insight":"一个没见过的小装置，就足够勾起你的探索欲","secondary":"connect"},{"text":"先看看价格和用途，想想有没有值得带走的","primary":"strategy","insight":"新鲜感之外，你也会自然地判断一个选择能带来什么","secondary":"organize"},{"text":"被门口的配色吸引，先进去转一圈","primary":"creative","insight":"颜色、形状和氛围，常常会比说明文字更先打动你","secondary":"strategy"}]},{"scene":"房间一角","question":"你决定收拾那个已经堆成小山的角落，最想先做什么？","options":[{"text":"看看东西都从哪来，找出总是堆乱的原因","primary":"analysis","insight":"反复出现的小麻烦，会让你想追到它背后的原因","secondary":"technical"},{"text":"翻到旧东西时，给朋友发一段它的往事","primary":"expression","insight":"普通物件上的生活细节，也能在你这里变成有温度的故事","secondary":"creative"},{"text":"留出一个舒服的小角落，放喜欢的东西","primary":"care","insight":"整理空间时，你在意它能不能让人感到舒服和安心","secondary":"expression"},{"text":"先分成几堆，再给每一类找固定的位置","primary":"organize","insight":"面对一团乱麻，你会通过分类和安排让事情慢慢归位","secondary":"analysis"}]},{"scene":"朋友低电","question":"朋友发来一句“今天有点烦”，你更可能怎么接？","options":[{"text":"发个刚好贴切的表情包，先让空气松一点","primary":"creative","insight":"你常能用一个意外的小点子，让沉闷的气氛松动起来","secondary":"strategy"},{"text":"问问发生了什么，陪对方把话慢慢说开","primary":"connect","insight":"关系里出现小信号时，你愿意主动打开一段对话","secondary":"care"},{"text":"想一句贴切的话，帮对方说出那种憋着的感觉","primary":"expression","insight":"你会留意一种情绪该怎样被准确地说出来","secondary":"creative"},{"text":"问要不要陪着待会儿，不说话也可以","primary":"care","insight":"你知道陪伴有时不需要解决问题，只需要让人安心","secondary":"expression"}]},{"scene":"新奇小物","question":"朋友送你一个没用过的小玩意，说明书有点长。你通常会？","options":[{"text":"先想想它最能帮我省掉哪件麻烦事","primary":"strategy","insight":"拿到新东西时，你容易先看见它能解决的具体问题","secondary":"organize"},{"text":"把配件排好，照着步骤慢慢来","primary":"organize","insight":"面对不熟悉的事情，清晰的步骤能帮你稳稳进入状态","secondary":"analysis"},{"text":"先按几个按钮试试，边玩边摸清用法","primary":"technical","insight":"你喜欢通过亲手试一试，把陌生的东西变成熟悉","secondary":"connect"},{"text":"先看看结构和说明，弄懂几个关键原理","primary":"analysis","insight":"在开始行动之前，你往往想先理解事情的基本规律","secondary":"technical"}]},{"scene":"拼图卡关","question":"一幅拼图卡在最后一片怎么也对不上，你会先？","options":[{"text":"换个方向、换种拼法，亲手试几种可能","primary":"technical","insight":"碰到卡点时，你愿意通过小范围试验找到突破口","secondary":"care"},{"text":"对照颜色和边缘，找出哪里不符合规律","primary":"analysis","insight":"细微的不一致，常常是你寻找答案的入口","secondary":"connect"},{"text":"把整幅图转过来，也许换个视角就看见了","primary":"creative","insight":"旧办法卡住时，你会试着把问题换一个角度来看","secondary":"organize"},{"text":"对着旁边的人讲讲经过，讲着讲着可能就通了","primary":"expression","insight":"把过程说清楚，也是你整理思路、找到新线索的方式","secondary":"strategy"}]},{"scene":"生日礼物","question":"给朋友挑生日礼物时，你最容易沿着哪条线找？","options":[{"text":"他最近常做什么，送个能天天用上的","primary":"strategy","insight":"做选择时，你会把心意放进对方真正用得上的地方","secondary":"analysis"},{"text":"他之前随口提过什么需要，悄悄记得就够了","primary":"care","insight":"别人随口说过的小需要，很容易被你认真地记住","secondary":"creative"},{"text":"列几个候选，把到货时间和包装都安排好","primary":"organize","insight":"你习惯把一份心意拆成具体准备，让它如期发生","secondary":"technical"},{"text":"找共同朋友打听一下，顺便凑个小惊喜","primary":"connect","insight":"你常会通过人与人的连接，让一个小想法更容易成真","secondary":"expression"}]},{"scene":"路过海报","question":"你看到一个感兴趣的周末展览，想约朋友一起去，会先做什么？","options":[{"text":"把集合时间和交通查好，发一个清楚的小安排","primary":"organize","insight":"你会用清楚的安排，替一次相聚减少来回确认的麻烦","secondary":"technical"},{"text":"找一句最打动自己的介绍，配上几句安利","primary":"expression","insight":"当一件事打动你时，你很想把那份感受准确传给别人","secondary":"strategy"},{"text":"看看哪天人少、票划算，顺路还能逛什么","primary":"strategy","insight":"你擅长把零散条件放在一起，选一个更合适的时机","secondary":"analysis"},{"text":"想想谁会感兴趣，分别去问问他们","primary":"connect","insight":"你容易记得不同人的兴趣，并把合适的人和事情连起来","secondary":"expression"}]},{"scene":"排队空档","question":"排队还要十分钟，手机电量又不多，你大概会？","options":[{"text":"观察人群，给眼前的小场景脑补一个故事","primary":"creative","insight":"普通的等待，也可能被你过成一段有画面的想象","secondary":"organize"},{"text":"默默估算队伍速度，看看什么时候能轮到","primary":"analysis","insight":"日常的小变化，也会让你忍不住观察它的规律","secondary":"connect"},{"text":"研究旁边的取号机器，看看有没有别的操作入口","primary":"technical","insight":"等待的时候，你也会被身边工具的工作方式吸引","secondary":"care"},{"text":"问问同行的人要不要歇一下，自己接着排","primary":"care","insight":"和人同行时，你会自然留意彼此的体力和舒服程度","secondary":"creative"}]},{"scene":"聚会空白","question":"朋友聚会突然安静了一小会儿，你最想做的是？","options":[{"text":"提议一个不用准备的小玩法，看看会发生什么","primary":"creative","insight":"你能从当下的小空档里，想到让事情有趣起来的新玩法","secondary":"organize"},{"text":"看看接下来去哪儿，让大家有个新的期待","primary":"strategy","insight":"气氛停顿时，你会把目光转向下一步可以做什么","secondary":"analysis"},{"text":"调调音箱和歌单，给聊天换个背景","primary":"technical","insight":"你愿意通过调整一个具体的小工具，改变大家的体验","secondary":"care"},{"text":"接上两个人都熟悉的话题，让他们聊起来","primary":"connect","insight":"你容易发现人与人之间的共同点，并给对话搭一座桥","secondary":"expression"}]},{"scene":"路线分叉","question":"和朋友散步时出现两条都能到终点的路，你会怎样帮忙决定？","options":[{"text":"描述两条路的感觉，让大家选更想体验的","primary":"expression","insight":"你喜欢把抽象的选项说成能想象的画面，帮助别人选择","secondary":"strategy"},{"text":"看看还剩多少时间，按后面的安排来选","primary":"organize","insight":"你会把眼前的小决定放进整段安排里，让节奏更顺","secondary":"technical"},{"text":"对比距离、坡度和人流，找出差别","primary":"analysis","insight":"看起来差不多的选项，你也会想分辨其中真实的不同","secondary":"connect"},{"text":"问问大家脚累不累，选走起来更舒服的","primary":"care","insight":"你做共同决定时，会把同行者的感受认真算进去","secondary":"creative"}]},{"scene":"手机相册","question":"翻一翻你的手机相册，哪类照片最容易让你停下来？","options":[{"text":"构图有点奇妙的光影和不起眼的小角落","primary":"creative","insight":"别人一眼掠过的角落，你可能会发现另一种好看的秩序","secondary":"organize"},{"text":"大家凑在一起，表情特别生动的瞬间","primary":"connect","insight":"人与人之间自然流动的热闹，会成为你珍惜的记忆","secondary":"expression"},{"text":"一看就能想起一大串故事的生活片段","primary":"expression","insight":"你记住的常常不只是一张画面，还有它背后的来龙去脉","secondary":"strategy"},{"text":"某个人终于放松下来、笑得很安心的样子","primary":"care","insight":"一个人放松下来的细小变化，也很容易被你看见","secondary":"creative"}]},{"scene":"半夜灵感","question":"睡前突然想到一个有意思的小点子，你更可能怎么处理？","options":[{"text":"想想它能用在哪，挑一个最有意思的用途","primary":"strategy","insight":"有了新点子，你会自然地寻找它可以落到现实里的位置","secondary":"analysis"},{"text":"记进备忘录，顺手写下明天能做的第一步","primary":"organize","insight":"你会给一闪而过的想法留一个可执行的小入口","secondary":"technical"},{"text":"琢磨它为什么可行，顺着条件再想几层","primary":"analysis","insight":"一个新想法会引出你对条件、原因和可能性的追问","secondary":"connect"},{"text":"立刻做个很粗糙的小尝试，看看有没有戏","primary":"technical","insight":"与其只在脑子里想，你愿意先做一个小版本来验证","secondary":"care"}]},{"scene":"电影散场","question":"刚看完一部让你意犹未尽的电影，你最想接着做什么？","options":[{"text":"找找拍摄花絮，看看那些场面是怎么完成的","primary":"technical","insight":"一个效果打动你之后，你会想进一步拆开它的实现过程","secondary":"expression"},{"text":"和朋友聊聊最戳自己的那一幕，试着说出原因","primary":"expression","insight":"你愿意为一种模糊的感受寻找准确的表达","secondary":"organize"},{"text":"重新拼一下前面的伏笔，看看漏掉了什么","primary":"analysis","insight":"你享受把分散的线索连起来，看见它们如何相互呼应","secondary":"care"},{"text":"脑补另一个结局，想想故事还能怎样展开","primary":"creative","insight":"故事结束之后，你的想象常常还会继续往前走","secondary":"analysis"}]},{"scene":"临时来客","question":"朋友说一小时后会顺路来坐坐，你打算怎样准备？","options":[{"text":"问问有没有不吃的东西，准备一点舒服的小招待","primary":"care","insight":"准备相聚时，你会先想对方在这里能不能自在","secondary":"strategy"},{"text":"看看家里现成的东西，凑一份省事又合适的招待","primary":"strategy","insight":"有限的时间和条件里，你会寻找刚刚好的组合","secondary":"technical"},{"text":"收桌子、冰饮料、备零食，按顺序一件件来","primary":"organize","insight":"时间突然变紧时，你会靠一个清楚的小顺序稳住节奏","secondary":"connect"},{"text":"问问最近有什么新鲜事，顺便约个共同朋友","primary":"connect","insight":"一次临时碰面，也能让你想到新的聊天和相聚机会","secondary":"creative"}]},{"scene":"旅行早餐","question":"旅行途中，大家还没决定早饭吃什么，你更可能提出？","options":[{"text":"“这家看起来很有故事，我来讲讲刚发现的介绍。”","primary":"expression","insight":"你会通过讲述一个地方的细节，让平常的选择变得鲜活","secondary":"organize"},{"text":"“先看看集合时间，选一家来得及慢慢吃的。”","primary":"organize","insight":"你希望体验和安排能够互相照顾，让一天走得更顺","secondary":"connect"},{"text":"“我们各点不同的，既能尝鲜也不会点太多。”","primary":"strategy","insight":"你会把几个人的选择组合起来，换来更多样的体验","secondary":"technical"},{"text":"“问问住在附近的人吧，也许能聊出一家小店。”","primary":"connect","insight":"对你来说，一段轻松的对话本身就是发现新东西的入口","secondary":"creative"}]},{"scene":"游戏初体验","question":"第一次玩一个没接触过的小游戏，你往往怎样开始？","options":[{"text":"先摸摸按键和道具，看看每一个会发生什么","primary":"technical","insight":"你喜欢在真实反馈里认识规则，边试边搭起自己的理解","secondary":"expression"},{"text":"找一条别人没走的路，看看地图里藏了什么","primary":"creative","insight":"已知路线之外的小空白，会让你特别想去看看","secondary":"analysis"},{"text":"先读规则，想清楚什么操作会影响结果","primary":"analysis","insight":"你会关注一件事里的因果关系，而不只看表面的热闹","secondary":"care"},{"text":"和新手朋友一起慢慢来，大家别有压力就好","primary":"care","insight":"共同尝试新东西时，你在意每个人能否安心地参与","secondary":"strategy"}]},{"scene":"旧物新用","question":"手边多了一个漂亮的空盒子，你最可能拿它做什么？","options":[{"text":"找人交换闲置，让它去一个更合适的地方","primary":"connect","insight":"你容易想到谁会需要什么，让闲置的东西重新流动起来","secondary":"creative"},{"text":"改个隔层或小机关，试试能不能变成顺手的工具","primary":"technical","insight":"一个普通物件，也能让你想动手改一改、验证新的用途","secondary":"expression"},{"text":"装饰成一个小场景，看心情慢慢改造","primary":"creative","insight":"你能从现成的东西里，看见尚未成形的另一种样子","secondary":"analysis"},{"text":"刚好省下买收纳盒的钱，先解决眼前的乱","primary":"strategy","insight":"你擅长发现手边资源与眼前需要之间的连接","secondary":"technical"}]},{"scene":"咖啡角落","question":"一个人坐进安静的咖啡馆，你最容易不知不觉开始什么？","options":[{"text":"顺手理理这几天的小安排，给脑子清清空","primary":"organize","insight":"一段安静的时间，会被你用来把散落的事情重新安放","secondary":"connect"},{"text":"给最近有点累的朋友发句问候，慢慢聊一会儿","primary":"care","insight":"即使自己在独处，你也可能记得别人最近的疲惫","secondary":"strategy"},{"text":"记下刚才路上的一件小事，想想怎样写得有趣","primary":"expression","insight":"日常发生的小事，会在你这里获得值得被记录的细节","secondary":"organize"},{"text":"观察大家怎么选座位，猜猜背后有什么共性","primary":"analysis","insight":"你对日常行为里的细小规律，有一种自然的好奇","secondary":"care"}]},{"scene":"一起布置","question":"几个朋友一起布置一个小聚会，你会自然而然靠近哪一块？","options":[{"text":"给门口写几句欢迎的话，让人一来就懂今天的气氛","primary":"expression","insight":"你会用贴切的几句话，让一个场合拥有自己的温度和语气","secondary":"organize"},{"text":"想想灯、桌布和小物件能怎么搭出新感觉","primary":"creative","insight":"你享受把不同元素放在一起，调出一个独特的整体感觉","secondary":"analysis"},{"text":"留意忙累的人，递杯水、接一手不用多说","primary":"care","insight":"你常能看见热闹背后的小疲惫，并用具体的行动回应","secondary":"strategy"},{"text":"招呼刚到的人，帮不熟的朋友找到共同话题","primary":"connect","insight":"你愿意帮陌生感松一点，让大家更自然地进入同一个场合","secondary":"creative"}]},{"scene":"计划变动","question":"出发前，原定的车次临时取消了。你会先把注意力放在哪？","options":[{"text":"看看其他路线，比较哪一种最值得改过去","primary":"strategy","insight":"原路走不通时，你会重新比较手里的选项，寻找可行的转向","secondary":"technical"},{"text":"确认剩余事项，把需要调整的顺序重新排一下","primary":"organize","insight":"面对突然的变动，你会通过重排步骤找回可掌握的节奏","secondary":"connect"},{"text":"打开导航试试不同组合，看看有没有隐藏路线","primary":"technical","insight":"你愿意借助工具反复试几种组合，让问题出现新的解法","secondary":"expression"},{"text":"查清取消的范围和原因，再判断别的路线会不会受影响","primary":"analysis","insight":"你不只看眼前的问题，也会追问它可能牵动哪些地方","secondary":"care"}]},{"scene":"周末小集","question":"逛一场没有攻略的周末市集，什么最容易让你停下脚步？","options":[{"text":"摊主讲起手里这件小东西的来历","primary":"expression","insight":"一件东西背后的叙述，常常比它本身更能留住你","secondary":"analysis"},{"text":"现场演示的小机关，想看看它怎么实现","primary":"technical","insight":"看见一个巧妙的小装置，你会想跟着它的工作过程多看一步","secondary":"creative"},{"text":"不同摊位的价签和摆法，居然有点规律","primary":"analysis","insight":"热闹场景里的排列和差别，也能引发你的观察欲","secondary":"expression"},{"text":"一种没想到的材料组合，忍不住凑近看看","primary":"creative","insight":"陌生材料之间的新组合，很容易点亮你的好奇心","secondary":"technical"}]},{"scene":"共享冰箱","question":"和室友共用的冰箱越来越满，你更想提出什么办法？","options":[{"text":"一起聊聊各自的习惯，约个大家都顺手的办法","primary":"connect","insight":"共同生活的小摩擦，会让你想先把彼此的习惯说开","secondary":"strategy"},{"text":"分好区域、贴个日期，拿取时不用来回翻","primary":"organize","insight":"你会用清晰的小规则，减少日常重复发生的混乱","secondary":"care"},{"text":"先消耗快到期的东西，凑几顿大家都能吃的","primary":"strategy","insight":"你容易在有限资源里找到可组合、可复用的空间","secondary":"connect"},{"text":"留个小格给加班晚归的人，回来能随手吃上","primary":"care","insight":"你会把共同空间里容易被忽略的人，也认真地放在心上","secondary":"organize"}]},{"scene":"听到故事","question":"朋友讲了一段曲折但已经过去的小经历，你最想追问的是？","options":[{"text":"“所以当时是先发生这件，再发生那件对吗？”","primary":"organize","insight":"一段复杂的经历里，你会自然地整理事情先后的脉络","secondary":"care"},{"text":"“你那时候心里到底冒出了哪句话？”","primary":"expression","insight":"你对故事里最真实、最贴近当事人的那句话特别好奇","secondary":"analysis"},{"text":"“我认识一个人也遇到过，你们可能很聊得来。”","primary":"connect","insight":"听见一个人的经历时，你会想到能与他产生共鸣的另一个人","secondary":"strategy"},{"text":"“如果再来一次，你现在会从哪一步换条路？”","primary":"strategy","insight":"你容易从过去的经历里，发现下一次可选择的新走法","secondary":"connect"}]},{"scene":"新手教程","question":"想学做一道新菜，你会怎样使用网上的教程？","options":[{"text":"先照着做一小份，亲手感受每一步的变化","primary":"technical","insight":"真正做一小遍，比只看说明更能帮你建立感觉","secondary":"creative"},{"text":"看看材料为什么这样配，哪些步骤影响口感","primary":"analysis","insight":"学习新东西时，你想知道步骤背后的原因，而不只记住步骤","secondary":"expression"},{"text":"借用它的思路，换点喜欢的材料试试","primary":"creative","insight":"你喜欢把现成的方法当作起点，再加进属于自己的变化","secondary":"technical"},{"text":"找一个节奏舒服、讲解耐心的，跟着慢慢来","primary":"care","insight":"你愿意给新的尝试留一点缓冲，让过程对自己也友好","secondary":"organize"}]},{"scene":"周末拼团","question":"朋友想一起做顿饭，大家还在讨论怎么开始，你最可能加入哪一段？","options":[{"text":"研究空气炸锅的新模式，试一道没做过的小吃","primary":"technical","insight":"你愿意拿身边的工具试新用法，让想法得到即时反馈","secondary":"creative"},{"text":"问问谁想负责哪道菜，让每个人都有一块想玩的","primary":"connect","insight":"一起做事时，你在意人和事情之间能否找到合拍的位置","secondary":"strategy"},{"text":"看看现有食材，组合成几道不费太多功夫的菜","primary":"strategy","insight":"你会从手里的条件出发，拼出一个合适又可行的方案","secondary":"connect"},{"text":"给这顿饭想个主题，连摆盘都想一起玩玩","primary":"creative","insight":"一件日常小事，你也能找到可以加入创意的空间","secondary":"technical"}]},{"scene":"赶车之前","question":"还有二十分钟要出门赶车，大家有点手忙脚乱，你更可能怎么做？","options":[{"text":"确认谁还没准备好，先帮他处理眼前那一小步","primary":"care","insight":"节奏变紧时，你会把支持落到别人眼前最需要的一小步","secondary":"organize"},{"text":"用一句清楚的话说明现在先做什么、在哪里集合","primary":"expression","insight":"忙乱的时候，你会努力把关键信息说得简短又明白","secondary":"analysis"},{"text":"看看路况和进站时间，确认现在究竟有多紧","primary":"analysis","insight":"压力出现时，你倾向于先判断实际情况，而不是只跟着紧张","secondary":"expression"},{"text":"按证件、行李、关门的顺序逐项确认","primary":"organize","insight":"越是时间紧，你越会借助顺序和清单把事情稳住","secondary":"care"}]},{"scene":"旧友见面","question":"很久没见的老朋友终于碰面，聊什么最容易让你投入？","options":[{"text":"把最近的日常讲成一个接一个小故事","primary":"expression","insight":"你喜欢通过分享生活的细节，让久别的距离慢慢缩短","secondary":"analysis"},{"text":"聊聊共同认识的人最近发生了什么，约着再聚","primary":"connect","insight":"你会自然地维系人与人之间的线，让关系继续生长","secondary":"strategy"},{"text":"脑补一场说走就走的旅行，越聊越有画面","primary":"creative","insight":"即使只是聊天，你也喜欢把一个可能性想得鲜活起来","secondary":"technical"},{"text":"问问这阵子过得怎么样，听那些没发在朋友圈里的事","primary":"care","insight":"比起公开的热闹，你也愿意接住一个人不常说出的近况","secondary":"organize"}]},{"scene":"装好新家","question":"搬进新住处，最先让你想动手处理的是哪件小事？","options":[{"text":"让常用东西各就各位，先搭出顺手的日常顺序","primary":"organize","insight":"进入新环境时，你会通过安放具体的小事建立自己的节奏","secondary":"care"},{"text":"试试灯、网络和各种开关，摸清每个东西怎么用","primary":"technical","insight":"你喜欢亲手摸清新环境里的工具，让它们真正为自己所用","secondary":"creative"},{"text":"观察采光、噪声和动线，再决定怎么摆","primary":"analysis","insight":"做安排之前，你会先观察条件，找出影响体验的关键","secondary":"expression"},{"text":"挑一件最能改善生活的小东西，先把它添上","primary":"strategy","insight":"事情很多时，你会先找最值得投入、最能改变体验的那一点","secondary":"connect"}]},{"scene":"遥控失灵","question":"准备看剧时，遥控器突然不听使唤了，你会先？","options":[{"text":"换电池、重连、试按钮，看看是哪一环出了问题","primary":"technical","insight":"小故障会激起你逐步尝试、亲手排查的兴趣","secondary":"strategy"},{"text":"回想它刚才什么时候还正常，找找变化的线索","primary":"analysis","insight":"问题出现时，你会对照前后的变化来寻找原因","secondary":"creative"},{"text":"把这一幕配成一段吐槽，先和朋友笑一下","primary":"expression","insight":"日常的小意外，也能被你转成让人有共鸣的表达","secondary":"technical"},{"text":"临时改成别的娱乐，看看今晚还能有什么新玩法","primary":"creative","insight":"一个小阻碍出现时，你也能从旁边找到新的乐趣","secondary":"connect"}]},{"scene":"突然放假","question":"忙了一阵后，突然多出半天空闲，你最想把它用来？","options":[{"text":"约个最近没聊上的人，随便走走聊聊","primary":"connect","insight":"有了空闲，你会想到给关系留一点真实相处的时间","secondary":"organize"},{"text":"把最挂心的一件小事做掉，剩下的时间就轻松了","primary":"strategy","insight":"你会找出最占心力的那一点，先处理它来换回轻松","secondary":"care"},{"text":"放慢一点，吃顿喜欢的，看看自己恢复到哪了","primary":"care","insight":"你愿意认真对待恢复精力这件事，给自己一点被照顾的空间","secondary":"analysis"},{"text":"整理一下接下来几天，让生活重新顺起来","primary":"organize","insight":"一小段空闲，也会成为你重新理顺生活节奏的机会","secondary":"expression"}]},{"scene":"野餐准备","question":"朋友们约好野餐，你觉得哪件准备最有意思？","options":[{"text":"把要带的东西汇成一张小清单，大家认领就好","primary":"organize","insight":"多人一起准备时，你喜欢让事情变得清楚、方便接手","secondary":"expression"},{"text":"给这次野餐取个名字，写一条让人想出门的邀请","primary":"expression","insight":"你能从一句邀请开始，为一次普通相聚添上独特的语气","secondary":"technical"},{"text":"找出大家都能接受的地点，顺便解决交通和预算","primary":"strategy","insight":"你会把几个现实条件放在一起，寻找大家都能出发的办法","secondary":"care"},{"text":"把有共同爱好的朋友约到一起，看看会聊出什么","primary":"connect","insight":"你喜欢创造相识的机会，让原本分开的生活产生交集","secondary":"organize"}]},{"scene":"屡试未成","question":"跟着教程做一件小手工，试了几次都不太像，你更可能？","options":[{"text":"给自己歇一会儿的时间，手感回来再继续","primary":"care","insight":"遇到挫折时，你也懂得给自己一点缓冲，而不只是一味催促","secondary":"analysis"},{"text":"对照成品看看，找出从哪一步开始有区别","primary":"analysis","insight":"反复尝试没奏效时，你会回到过程里定位具体差异","secondary":"creative"},{"text":"既然已经歪了，不如顺势改成另一种样子","primary":"creative","insight":"偏离原计划的结果，也可能在你眼里变成创作的新入口","secondary":"connect"},{"text":"只换一个做法再试，看看这次会不会不同","primary":"technical","insight":"你愿意一次改变一个小条件，用实际反馈慢慢接近答案","secondary":"strategy"}]},{"scene":"生活小店","question":"常去的小店说想摆一个“客人推荐角”，你最想放上什么？","options":[{"text":"一张附近小店联动的地图，让大家顺路逛逛","primary":"strategy","insight":"你容易看见几件独立的事情之间，可以互相带动的机会","secondary":"care"},{"text":"一个可以按一下、转一下的互动小玩意","primary":"technical","insight":"让人能亲手参与的小设计，会让你特别想尝试实现","secondary":"strategy"},{"text":"不同客人的手写推荐，让陌生人也能接上话","primary":"connect","insight":"你喜欢给陌生人留下轻轻搭话的入口，让空间更有连接","secondary":"organize"},{"text":"每周换一个主题的拼贴，材料都从生活里捡","primary":"creative","insight":"你能从平常的素材里，组合出持续变化的新鲜感","secondary":"connect"}]},{"scene":"旅行结束","question":"一趟旅行结束回到家，你最容易先做哪件事？","options":[{"text":"把票据、照片和物品归好，让生活回到熟悉的节奏","primary":"organize","insight":"一段体验结束后，你会通过整理给它一个妥帖的收尾","secondary":"expression"},{"text":"回想哪些安排好用，哪些地方下次可以换个走法","primary":"analysis","insight":"经历过一件事后，你会自然地回头寻找可复用的规律","secondary":"creative"},{"text":"给同行的人发句“到家了吗”，看看大家有没有缓过来","primary":"care","insight":"热闹结束之后，你仍会记得关心大家是否平安、是否累了","secondary":"analysis"},{"text":"挑几个最鲜活的瞬间，写一小段这趟旅行的故事","primary":"expression","insight":"你喜欢把亲身经历留下来，让感受不只是转瞬即逝","secondary":"technical"}]},{"scene":"独处时刻","question":"一个不被打扰的晚上，什么最容易让你忘记看时间？","options":[{"text":"写写说说，把脑子里的碎片拼成一段完整的话","primary":"expression","insight":"把零散感受整理成表达，本身就能让你产生投入感","secondary":"technical"},{"text":"给朋友的长消息慢慢回复，认真接住他的近况","primary":"care","insight":"认真回应一个人的真实感受，会让你愿意花下整段时间","secondary":"analysis"},{"text":"和几个有共同爱好的人聊天，一路交换新发现","primary":"connect","insight":"信息在人与人之间来回流动的过程，很容易让你投入其中","secondary":"organize"},{"text":"随手画、剪、搭一点东西，看看最后会长成什么","primary":"creative","insight":"不预设答案地做点新东西，会让你享受时间流走的感觉","secondary":"connect"}]},{"scene":"时间盲盒","question":"如果突然有一小时可以随便折腾，你最想打开哪一个“小盲盒”？","options":[{"text":"一个没用过的小工具，试试能替生活省哪一步","primary":"technical","insight":"你会被可以亲手试验的新工具吸引，并想把它用进生活","secondary":"strategy"},{"text":"一个一直好奇的小问题，搜集线索把它弄明白","primary":"analysis","insight":"弄懂一个没有现成答案的小问题，会让你产生持续的兴致","secondary":"creative"},{"text":"一堆散着的待办，给它们排个舒服又能做到的顺序","primary":"organize","insight":"把散乱的事情整理成可行动的顺序，会给你一种踏实的满足","secondary":"expression"},{"text":"几个一直想做的小计划，挑一个最值得现在开始的","primary":"strategy","insight":"从许多可能性中找到值得开始的一项，会让你想立刻行动","secondary":"care"}]}],"profiles":[{"id":"expression","name":"故事表达家","nickname":"把平常讲得有意思的人","tags":["表达有画面","细节收藏家","自带共鸣"],"slogan":"日子负责发生，我负责把它讲动人。","intro":"你值得试试：把观察、感受和想法，变成别人愿意听的故事。","why":"一件小事到了你这里，常常会多出一个有意思的角度。你留意的不只是发生了什么，还有当时的表情、气氛和那句没说完的话。把模糊的感受说清楚，可能就是你容易忽略的优势。","hidden":"你的脑内可能有个素材收藏夹：当时只觉得好玩，过几天就能变成一个好开头。","step":"挑今天的一件小事，写成一段一百字的故事，分享给一个朋友。","directions":["生活内容创作","文案与故事写作","播客或短视频表达"],"blend":{"expression":0.65,"creative":0.22,"care":0.13},"accent":"#BD5C50"},{"id":"creative","name":"灵感造型家","nickname":"给普通日常加一点新鲜的人","tags":["联想力在线","有自己的审美","不按常规组合"],"slogan":"普通的一天，也可以换个打开方式。","intro":"你值得试试：让一个看不见的点子，长成有形、有趣的东西。","why":"别人觉得已经可以了，你可能还会想：换个颜色、顺序或玩法，会不会更有意思？你的灵感不一定来得轰轰烈烈，常常藏在随手调整的小细节里。你擅长把熟悉的东西，拼出一点新鲜感。","hidden":"你随手存的图、改过的摆法和奇怪联想，可能正在悄悄组成一套个人风格。","step":"用家里现成的三样东西，重新布置一个小角落，拍下前后对比。","directions":["视觉与排版设计","手作与产品点子","活动创意与空间布置"],"blend":{"creative":0.65,"technical":0.22,"expression":0.13},"accent":"#A26B8F"},{"id":"strategy","name":"机会拼图家","nickname":"总能想到下一种可能的人","tags":["会换位想","资源连接力","点子有落点"],"slogan":"把“要不试试”，拼成一条可走的路。","intro":"你值得试试：找到人们想要什么，再把手边的条件连成方案。","why":"面对一件事，你往往会多想一步：谁会喜欢它？还有什么可以一起用？你容易看见需求和条件之间的连接，也愿意在几种办法中找一个值得先试的。让想法有去处，可能是你的自然习惯。","hidden":"逛街、点单、参加活动时，你可能已经默默做完了半份“这里还能怎么改”的笔记。","step":"找一个日常小不便，问两位朋友的想法，再写下一个十分钟能试的办法。","directions":["产品与服务策划","品牌与活动策划","小项目探索"],"blend":{"strategy":0.65,"connect":0.22,"technical":0.13},"accent":"#A57932"},{"id":"organize","name":"日常调度家","nickname":"让一团乱慢慢变顺的人","tags":["拆解小能手","节奏感稳定","把事情接住"],"slogan":"再乱的开场，也能理出下一步。","intro":"你值得试试：把零散的人、事和时间，安排成舒服的节奏。","why":"事情一多，你可能会先找顺序：哪件最急，哪件可以等等，谁需要知道下一步。你带来的价值不只是列好清单，还有让大家少一点慌张。把事情稳稳往前推，也是一种很有分量的创造。","hidden":"你的“顺手安排一下”，有时已经替大家省掉了三轮群聊和一次集体迷路。","step":"为一次朋友小聚做一张简短安排表，只写时间、地点和每个人的一件小事。","directions":["活动组织与执行","项目协调","社群日常运营"],"blend":{"organize":0.65,"strategy":0.22,"connect":0.13},"accent":"#5D836B"},{"id":"analysis","name":"线索解读家","nickname":"从看似零散里找到规律的人","tags":["细节雷达","追问为什么","让复杂变清楚"],"slogan":"线索看起来很散，我想把它们连起来。","intro":"你值得试试：整理信息、辨认差异，让一个问题慢慢清楚起来。","why":"遇到说不通的地方，你可能没那么容易翻篇。你会比对前后、留意差异，也愿意多找一点信息。你的思考常常不是马上给出答案，而是先把问题问准；这份耐心，能让判断多一些依据。","hidden":"你嘴上的“我再看一下”，脑内可能已经打开了好几个线索窗口，正在等它们对上。","step":"记录一周里某件小事的变化，比如睡眠或通勤时间，找一个可能的规律。","directions":["数据整理与分析","信息研究与事实核对","用户观察与问题梳理"],"blend":{"analysis":0.65,"organize":0.22,"strategy":0.13},"accent":"#507C91"},{"id":"technical","name":"好奇实验家","nickname":"想亲手试出答案的人","tags":["动手欲上线","边试边懂","爱琢磨原理"],"slogan":"先动手，答案会在路上冒出来。","intro":"你值得试试：把“它怎么做到的”，变成自己的一个小实验。","why":"新东西出现时，你可能想亲自点一点、拆开看看，弄懂它怎么运转。对你来说，试错不是白忙，而是在收集反馈。你容易在一次次调整里获得乐趣，也可能把一个麻烦，改成更顺手的办法。","hidden":"别人眼里的“怎么又折腾起来了”，可能正是你给生活安装小升级的过程。","step":"找一个常重复的小动作，用手机快捷指令或现成工具做一次简化。","directions":["编程与自动化小工具","数码与动手制作","产品原型与功能试验"],"blend":{"technical":0.65,"analysis":0.22,"organize":0.13},"accent":"#5D7F7B"},{"id":"connect","name":"关系搭桥家","nickname":"让人和想法接得上话的人","tags":["接话有温度","会找共同点","促成小合作"],"slogan":"聊着聊着，我们就有了新的可能。","intro":"你值得试试：让不同的人听懂彼此，也让好想法找到同行者。","why":"在人和人之间，你常能听出各自在意什么。冷场时找个共同话题，意见不同时换个说法，这些小动作可能来得很自然。你带来的不只是热闹，而是让交流继续、让彼此愿意一起做点什么。","hidden":"你可能记不全所有聊天内容，却记得谁喜欢什么；下一次连接，往往就藏在那里。","step":"邀请两位有共同兴趣的朋友聊二十分钟，先准备一个大家都想回答的小问题。","directions":["社群交流与活动主持","合作沟通与资源对接","访谈与用户交流"],"blend":{"connect":0.65,"care":0.22,"creative":0.13},"accent":"#B26B4D"},{"id":"care","name":"安心陪伴家","nickname":"让人可以松一口气的人","tags":["感受力细腻","听见没说出口","陪伴有分寸"],"slogan":"我不急着给答案，先陪你把话说完。","intro":"你值得试试：用细心的理解和有分寸的支持，给人一点安心。","why":"一句话的停顿、和平时不一样的语气，你可能比别人更早留意到。你愿意听听对方真正需要什么，再决定说什么、做什么。你的支持不一定声势很大，却可能让人觉得被看见，也更敢做自己。","hidden":"你可能是朋友通讯录里那个“没想好怎么说，但想先找你”的人，也记得留一份温柔给自己。","step":"问一位朋友“最近有什么小事占着你的心”，先听五分钟，再问对方需要什么。","directions":["学习陪伴与经验分享","社区支持与志愿服务","重视体验的服务与关怀"],"blend":{"care":0.65,"expression":0.22,"analysis":0.13},"accent":"#9B7883"}]}</script>
+<script>
+'use strict';
+const { questions, profiles } = JSON.parse(document.getElementById('quiz-data').textContent);
+const dimensions = {
+  expression: '内容表达', creative: '创意想象', strategy: '机会策划', organize: '组织安排',
+  analysis: '线索分析', technical: '动手探索', connect: '沟通连接', care: '陪伴支持'
+};
+
+function isComplete(answers) {
+  return Array.isArray(answers) && answers.length === questions.length &&
+    questions.every((question, i) => Number.isInteger(answers[i]) && answers[i] >= 0 && answers[i] < question.options.length);
+}
+
+function analyze(answers) {
+  if (!isComplete(answers)) throw new Error('请先完成全部 40 道题。');
+  const raw = Object.fromEntries(Object.keys(dimensions).map(key => [key, 0]));
+  const maximum = { ...raw };
+  const selected = questions.map((question, i) => {
+    const choice = question.options[answers[i]];
+    raw[choice.primary] += 3;
+    raw[choice.secondary] += 1;
+    for (const key of Object.keys(dimensions)) {
+      maximum[key] += Math.max(...question.options.map(option => (option.primary === key ? 3 : 0) + (option.secondary === key ? 1 : 0)));
+    }
+    return { ...choice, scene: question.scene, index: i };
+  });
+  const scores = Object.fromEntries(Object.keys(dimensions).map(key => [key, raw[key] / maximum[key]]));
+  // Equal totals use all 40 answers to break ties, so the first profile gets no fixed advantage.
+  const signature = answers.reduce((hash, answer) => Math.imul(hash ^ (answer + 1), 16777619) >>> 0, 2166136261);
+  const tieKey = id => [...id].reduce((hash, char) => Math.imul(hash ^ char.charCodeAt(0), 16777619) >>> 0, signature);
+  const ranked = profiles.map(profile => ({
+    profile,
+    score: Object.entries(profile.blend).reduce((sum, [key, weight]) => sum + scores[key] * weight, 0),
+    tie: tieKey(profile.id)
+  })).sort((a, b) => b.score - a.score || a.tie - b.tie);
+  const winner = ranked[0].profile;
+  const relevant = selected.map(choice => ({ ...choice, relevance: (winner.blend[choice.primary] || 0) * 3 + (winner.blend[choice.secondary] || 0) })).filter(choice => choice.relevance > 0);
+  relevant.sort((a, b) => b.relevance - a.relevance || a.index - b.index);
+  const evidence = [];
+  for (const choice of relevant) {
+    if (evidence.length === 0 || choice.primary !== evidence[0].primary) evidence.push(choice);
+    if (evidence.length === 2) break;
+  }
+  if (evidence.length < 2) {
+    const another = relevant.find(choice => choice.index !== evidence[0]?.index);
+    if (another) evidence.push(another);
+  }
+  return { raw, maximum, scores, ranked, winner, evidence };
+}
+
+// UI begins here. All data and scoring stay in this file; no request leaves the page.
+const $ = id => document.getElementById(id);
+const state = { answers: Array(questions.length).fill(null), index: 0, view: 'home', result: null };
+let toastTimer;
+const checkSvg = '<svg class="option-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m4 10 4 4 8-9"/></svg>';
+
+function showView(view) {
+  for (const name of ['home', 'quiz', 'result']) $(name).hidden = name !== view;
+  state.view = view;
+  $(view).classList.remove('view-enter');
+  void $(view).offsetWidth;
+  $(view).classList.add('view-enter');
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+
+function updateProgress() {
+  const count = state.answers.filter(answer => answer !== null).length;
+  $('progress-text').innerHTML = `已完成 <strong>${count}</strong> / ${questions.length}`;
+  $('progress').setAttribute('aria-valuenow', String(count));
+  $('progress-fill').style.width = `${count / questions.length * 100}%`;
+  $('next').disabled = state.answers[state.index] === null;
+}
+
+function choose(answer) {
+  state.answers[state.index] = answer;
+  updateProgress();
+}
+
+function renderQuestion(focus = true) {
+  const question = questions[state.index];
+  $('scene').textContent = '✧ ' + question.scene;
+  $('question-number').textContent = String(state.index + 1).padStart(2, '0');
+  $('question-title').textContent = question.question;
+  $('options').replaceChildren();
+  question.options.forEach((option, i) => {
+    const label = document.createElement('label');
+    label.className = 'option';
+    const input = document.createElement('input');
+    input.type = 'radio';
+    input.name = 'answer';
+    input.value = i;
+    input.checked = state.answers[state.index] === i;
+    input.addEventListener('change', () => choose(i));
+    const letter = document.createElement('span');
+    letter.className = 'option-letter';
+    letter.textContent = 'ABCD'[i];
+    letter.setAttribute('aria-hidden', 'true');
+    const text = document.createElement('span');
+    text.className = 'option-label';
+    text.textContent = option.text;
+    label.append(input, letter, text);
+    label.insertAdjacentHTML('beforeend', checkSvg);
+    $('options').append(label);
+  });
+  $('previous').disabled = state.index === 0;
+  $('next-label').textContent = state.index === questions.length - 1 ? '生成我的结果' : '下一题';
+  $('chapter-dots').replaceChildren();
+  for (let i = 0; i < 8; i++) {
+    const dot = document.createElement('span');
+    dot.className = 'chapter-dot' + (Math.floor(state.index / 5) === i ? ' current' : i < Math.floor(state.index / 5) ? ' done' : '');
+    $('chapter-dots').append(dot);
+  }
+  const notes = ['不必寻找完美答案。你平常的样子，就很好。', '不用选「理想中的自己」，选你平时真的会做的。', '每个小习惯，都可能是一条天赋的线索。', '没有标准答案，放心做那个最像你的选择。', '已经走过一半啦，再收集一点关于自己的线索。', '你的可能性，正在慢慢拼出自己的形状。', '快到啦，不同的选择，都有各自闪光的地方。', '最后几条线索，跟着第一直觉走就好。'];
+  $('quiz-note').textContent = notes[Math.floor(state.index / 5)];
+  updateProgress();
+  $('question-card').classList.remove('view-enter');
+  void $('question-card').offsetWidth;
+  $('question-card').classList.add('view-enter');
+  if (focus) {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    $('question-title').focus({ preventScroll: true });
+  }
+}
+
+function startQuiz() {
+  showView('quiz');
+  renderQuestion();
+}
+
+function renderResult() {
+  const result = state.result;
+  const profile = result.winner;
+  $('result-sheet').style.setProperty('--accent', profile.accent);
+  for (const key of ['name', 'nickname', 'slogan', 'intro', 'why', 'hidden', 'step']) $('result-' + key).textContent = profile[key];
+  $('result-tags').replaceChildren();
+  for (const tag of profile.tags) {
+    const span = document.createElement('span');
+    span.className = 'result-tag';
+    span.textContent = tag;
+    $('result-tags').append(span);
+  }
+  $('result-evidence').replaceChildren();
+  for (const choice of result.evidence) {
+    const line = document.createElement('p');
+    line.textContent = '· ' + choice.insight;
+    $('result-evidence').append(line);
+  }
+  $('directions').replaceChildren();
+  const title = document.createElement('span');
+  title.textContent = '可以试试';
+  $('directions').append(title);
+  for (const direction of profile.directions) {
+    const span = document.createElement('span');
+    span.className = 'direction';
+    span.textContent = direction;
+    $('directions').append(span);
+  }
+  const second = result.ranked[1];
+  $('blend-note').textContent = result.ranked[0].score - second.score < .035
+    ? `这次你在「${second.profile.name}」上也呈现出接近的倾向。两条路都可以试，不必急着只选一种。`
+    : `你也可以顺路看看「${second.profile.name}」的方向：${second.profile.directions.join('、')}。赛道之间，可以自由串门。`;
+  $('dimension-bars').replaceChildren();
+  for (const [key, value] of Object.entries(result.scores).sort((a, b) => b[1] - a[1])) {
+    const row = document.createElement('div');
+    row.className = 'dimension-row';
+    const label = document.createElement('span');
+    label.className = 'dimension-label';
+    label.textContent = dimensions[key];
+    const track = document.createElement('div');
+    track.className = 'dimension-track';
+    track.setAttribute('aria-hidden', 'true');
+    const fill = document.createElement('div');
+    fill.className = 'dimension-fill';
+    fill.style.width = `${value * 100}%`;
+    track.append(fill);
+    const number = document.createElement('span');
+    number.className = 'dimension-value';
+    number.textContent = Math.round(value * 100);
+    number.setAttribute('aria-label', `本轮倾向强度 ${Math.round(value * 100)}，满刻度100`);
+    row.append(label, track, number);
+    $('dimension-bars').append(row);
+  }
+  document.querySelector('.details').open = false;
+  showView('result');
+  $('result-name').focus({ preventScroll: true });
+}
+
+function notify(message) {
+  clearTimeout(toastTimer);
+  $('toast').textContent = message;
+  $('toast').classList.add('visible');
+  toastTimer = setTimeout(() => $('toast').classList.remove('visible'), 2800);
+}
+
+function shareText() {
+  const profile = state.result.winner;
+  return `我的天赋赛道：${profile.name} ✦\n「${profile.slogan}」\n${profile.tags.join(' · ')}\n你测出来适合什么赛道？\n#天赋漫游 #你的天赋适合什么赛道`;
+}
+
+async function copyResult() {
+  const text = shareText();
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+    } else {
+      const temp = document.createElement('textarea');
+      temp.value = text;
+      temp.setAttribute('aria-hidden', 'true');
+      temp.style.cssText = 'position:fixed;left:-10000px;top:0;font-size:16px';
+      document.body.append(temp);
+      let copied = false;
+      try {
+        temp.select();
+        temp.setSelectionRange(0, temp.value.length);
+        copied = typeof document.execCommand === 'function' && document.execCommand('copy');
+      } finally { temp.remove(); }
+      if (!copied) throw new Error('Manual copy needed');
+    }
+    notify('已复制。带着这句天赋宣言，去找同频的人吧。');
+  } catch {
+    $('copy-text').value = text;
+    $('copy-dialog').showModal();
+    $('copy-text').focus();
+    $('copy-text').select();
+  }
+}
+
+$('start').addEventListener('click', startQuiz);
+$('back-home').addEventListener('click', () => {
+  $('start').firstChild.textContent = '继续测试';
+  showView('home');
+  $('start').focus({ preventScroll: true });
+});
+$('previous').addEventListener('click', () => {
+  if (state.index > 0) { state.index -= 1; renderQuestion(); }
+});
+$('next').addEventListener('click', () => {
+  if (state.answers[state.index] === null) return;
+  if (state.index < questions.length - 1) {
+    state.index += 1;
+    renderQuestion();
+  } else if (isComplete(state.answers)) {
+    state.result = analyze(state.answers);
+    renderResult();
+  } else {
+    state.index = state.answers.findIndex(answer => answer === null);
+    renderQuestion();
+    notify('还有一条线索没选，完成后就能看结果啦。');
+  }
+});
+$('copy-result').addEventListener('click', copyResult);
+$('restart').addEventListener('click', () => $('restart-dialog').showModal());
+$('cancel-restart').addEventListener('click', () => $('restart-dialog').close());
+$('confirm-restart').addEventListener('click', () => {
+  $('restart-dialog').close();
+  state.answers = Array(questions.length).fill(null);
+  state.index = 0;
+  state.result = null;
+  $('start').firstChild.textContent = '开始测试';
+  startQuiz();
+});
+$('close-copy').addEventListener('click', () => $('copy-dialog').close());
+
+</script>
+</body>
+</html>
